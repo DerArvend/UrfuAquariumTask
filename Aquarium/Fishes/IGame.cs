@@ -7,6 +7,7 @@ namespace Aquarium.Fishes
 	public interface IGame
 	{
 		IEnumerable<IGameObject> GetAllObjects();
-		JObject Settings { get; }
+		void Update();
+		GameSettings Settings { get; }
 	}
 }
