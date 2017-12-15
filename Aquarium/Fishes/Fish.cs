@@ -9,21 +9,12 @@ namespace Aquarium.Fishes
 {
 	public abstract class Fish: IGameObject
 	{
-		
 
-		public Size GetSize()
-		{
-			throw new NotImplementedException();
-		}
 
-		public Point GetLocation()
-		{
-			throw new NotImplementedException();
-		}
+		public abstract Size GetSize();
 
-		public bool Update(IGame game)
-		{
-			throw new NotImplementedException();
-		}
+		public abstract Point GetLocation();
+
+		public abstract bool Update(IGame game);
 	}
 }
