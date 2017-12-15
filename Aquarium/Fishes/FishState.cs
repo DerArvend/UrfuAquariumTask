@@ -1,6 +1,6 @@
 ﻿namespace Aquarium.Fishes
 {
-	public enum FishStates
+	public enum FishState
 	{
 		Default,
 		RunningAway,
