@@ -60,7 +60,7 @@
   <ItemGroup>
     <Compile Include="Fishes\Caviar.cs" />
     <Compile Include="Fishes\Fish.cs" />
-    <Compile Include="Fishes\FishStates.cs" />
+    <Compile Include="Fishes\FishState.cs" />
     <Compile Include="Fishes\GameSettings.cs" />
     <Compile Include="Fishes\IGame.cs" />
     <Compile Include="Fishes\IGameObject.cs" />
