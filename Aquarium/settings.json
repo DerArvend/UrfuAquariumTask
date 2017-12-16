@@ -3,7 +3,13 @@
 	"chanceToDropFood": 0.0048,
 	"degreeOfHunger" : 100,
 
-	"shark" : {
+	"Caviar" : {
+		"width": 30,
+		"height": 30,
+		"moveSpeed": 60,
+		"spawnDelay": 500
+	},
+	"Shark" : {
 		"width" : 250,
 		"height" : 85,
 		"fastingRate": 1.5,
@@ -83,7 +89,7 @@
 		"chanceOfBirth": 0.0002,
 		"radiusOfHunger": 50
 	},
-	"kingOfFish" : {
+	"FishKing" : {
 		"moveSpeed": 200,
 		"radius": 30
 	}
