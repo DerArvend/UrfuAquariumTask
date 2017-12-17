@@ -6,7 +6,6 @@
 		RunningAway,
 		Attack,
 		GoToFood,
-		Breeding,
 		Dead
 	}
 }
