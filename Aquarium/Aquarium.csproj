@@ -59,9 +59,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Fishes\Caviar.cs" />
+    <Compile Include="Fishes\Catfish.cs" />
     <Compile Include="Fishes\Fish.cs" />
+    <Compile Include="Fishes\FishFood.cs" />
     <Compile Include="Fishes\FishState.cs" />
     <Compile Include="Fishes\GameSettings.cs" />
+    <Compile Include="Fishes\HunterFish.cs" />
     <Compile Include="Fishes\IGame.cs" />
     <Compile Include="Fishes\IGameObject.cs" />
     <Compile Include="Geometry\PointExtensions.cs" />
