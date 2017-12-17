@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
+
 using Newtonsoft.Json.Linq;
 
 namespace Aquarium.Fishes
@@ -10,6 +11,7 @@ namespace Aquarium.Fishes
 		IEnumerable<IGameObject> GetAllObjects();
 		Size AquariumSize { get; }
 		void Update();
+		bool TryAddObject(IGameObject obj);
 		GameSettings Settings { get; }
 	}
 }
