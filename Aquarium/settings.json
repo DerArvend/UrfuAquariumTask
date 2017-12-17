@@ -1,96 +1,46 @@
 {
     "updateRate": 30,
-	"chanceToDropFood": 0.0048,
-	"degreeOfHunger" : 100,
+	"foodSpawnChance": 0.0048,
+	"maxHungerRadiusCoefficent": 10,
 
 	"Caviar" : {
 		"width": 30,
 		"height": 30,
-		"moveSpeed": 60,
+		"moveSpeed": 3,
 		"spawnDelay": 500
 	},
 	"Shark" : {
 		"width" : 250,
 		"height" : 85,
-		"fastingRate": 1.5,
-		"moveSpeed": 130,
-		"chanceOfBirth": 0.0008,
-		"radiusOfHunger": 30
+		"fastMoveSpeed": 5,
+		"moveSpeed": 3,
+		"hungerRadius": 30
 	},
-	"BlueNeon" : {
+	"Neon" : {
 		"width" : 65,
 		"height" : 25,
-		"fastingRate": 2,
-		"moveSpeed": 200,
-		"chanceOfBirth": 0.0032,
-		"radiusOfHunger": 22
-	},
-	"AnotherFish1" : {
-		"width" : 125,
-		"height" : 65,
-		"fastingRate": 1.3,
-		"moveSpeed": 132,
-		"chanceOfBirth": 0.0016,
-		"radiusOfHunger": 28
-	},
-	"AnotherFish2" : {
-		"width" : 155,
-		"height" : 120,
-		"fastingRate": 1.0,
-		"moveSpeed": 100,
-		"chanceOfBirth": 0.0016,
-		"radiusOfHunger": 32
-	},
-	"Dolphin" : {
-		"width" : 200,
-		"height" : 85,
-		"fastingRate": 1.0,
-		"moveSpeed": 140,
-		"chanceOfBirth": 0.0008,
-		"radiusOfHunger": 30
+		"moveSpeed": 5,
+		"hungerRadius": 22
 	},	
 	"Piranha" : {
 		"width" : 135,
 		"height" : 75,
-		"fastingRate": 2.2,
-		"moveSpeed": 150,
-		"chanceOfBirth": 0.0014,
-		"radiusOfHunger": 40
+		"moveSpeed": 4,
+		"hungerRadius": 40
 	},
-	"Som" : {
+	"Catfish" : {
 		"width" : 350,
 		"height" : 75,
-		"fastingRate": 1.2,
-		"moveSpeed": 100,
-		"chanceOfBirth": 0.0004,
-		"radiusOfHunger": 60
+		"moveSpeed": 3,
+		"hungerRadius": 60
 	},
-	"SwordFish1" : {
-		"width" : 155,
-		"height" : 75,
-		"fastingRate": 1.0,
-		"moveSpeed": 100,
-		"chanceOfBirth": 0.0016,
-		"radiusOfHunger": 32
-	},
-	"SwordFish2" : {
-		"width" : 185,
-		"height" : 65,
-		"fastingRate": 1.0,
-		"moveSpeed": 140,
-		"chanceOfBirth": 0.0016,
-		"radiusOfHunger": 32
-	},
-	"Turtule" : {
-		"width" : 100,
-		"height" : 75,
-		"fastingRate": 0.2,
-		"moveSpeed": 40,
-		"chanceOfBirth": 0.0002,
-		"radiusOfHunger": 50
-	},
+
 	"FishKing" : {
-		"moveSpeed": 200,
-		"radius": 30
+		"moveSpeed": 3,
+		"radius": 30,
+		"defendedAreaCenter": {
+			"x": 0,
+			"y": 0
+		}
 	}
 }
