@@ -17,7 +17,7 @@ namespace Aquarium.Geometry
         public Vector(double length, double angle)
         {
             X = length * Math.Acos(angle);
-            Y = -length * Math.Asin(angle);
+            Y = length * Math.Asin(angle);
         }
 
         public double Length => Math.Sqrt(X * X + Y * Y);
@@ -28,7 +28,7 @@ namespace Aquarium.Geometry
 
         public override string ToString()
         {
-            return string.Format("X: {0}, Y: {1}", X, Y);
+            return $"X: {X}, Y: {Y}";
         }
 
         protected bool Equals(Vector other)
@@ -73,7 +73,7 @@ namespace Aquarium.Geometry
 
         public Vector BoundTo(Size size)
         {
-            return new Vector(new Point(((int)(Math.Max(0, Math.Min(size.Width, X)))), (int)(Math.Max(0, Math.Min(size.Height, Y)))));
+            return new Vector(new Point(((int)Math.Max(0, Math.Min(size.Width, X))), (int)Math.Max(0, Math.Min(size.Height, Y))));
         }
         public Point ToPoint() => new Point((int)X, (int)Y);
     }
