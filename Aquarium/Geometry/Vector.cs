@@ -24,7 +24,7 @@ namespace Aquarium.Geometry
 
         public double Angle => Math.Atan2(Y, X);
 
-        public static Vector Zero = new Vector(new Point(0, 0));
+        public static Vector Zero => new Vector(new Point(0, 0));
 
         public override string ToString()
         {
@@ -73,7 +73,7 @@ namespace Aquarium.Geometry
 
         public Vector BoundTo(Size size)
         {
-            return new Vector(new Point(((int)Math.Max(0, Math.Min(size.Width, X))), (int)Math.Max(0, Math.Min(size.Height, Y))));
+            return new Vector(new Point((int)Math.Max(0, Math.Min(size.Width, X)), (int)Math.Max(0, Math.Min(size.Height, Y))));
         }
         public Point ToPoint() => new Point((int)X, (int)Y);
     }

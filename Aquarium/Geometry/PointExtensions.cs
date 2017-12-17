@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Drawing;
+using Aquarium.Fishes;
 using static System.Math;
 
 namespace Aquarium.Geometry
@@ -28,6 +29,23 @@ namespace Aquarium.Geometry
 			var dx = Cos(angle) * length;
 			var dy = Sin(angle) * length;
 			return new Point((int) dx + p.X, (int) dy + p.Y);
+		}
+
+		public static Point Substract(this Point p1, Point p2)
+		{
+			return new Point(p1.X - p2.X, p1.Y - p2.Y);
+		}
+
+		public static bool IsNearBorder(this Point p, IGame game, int radius = 1)
+		{
+			if (radius <=0)
+				throw new ArgumentException("radius must be more than zero");
+			if (radius >= Min(game.AquariumSize.Height, game.AquariumSize.Width))
+				throw new ArgumentException("radius must be less than aquarium size");
+			return p.X >= game.AquariumSize.Width - radius ||
+			       p.X <= radius ||
+			       p.Y >= game.AquariumSize.Height - radius ||
+			       p.Y <= radius;
 		}
 	}
 }
