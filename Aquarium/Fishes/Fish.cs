@@ -9,9 +9,9 @@ namespace Aquarium.Fishes
 	public abstract class Fish : IGameObject
 	{
 		protected Dictionary<FishState, Action<IGame>> Actions;
-		protected FishState CurrentState;
-		protected Point Direction;
-		protected int Hunger; //value from 0 to 100
+		public FishState CurrentState { get; protected set; }
+		public Point Direction { get; protected set; }
+		public int Hunger { get; protected set; }//value from 0 to 100
 		public Size Size { get; protected set; }
 		public Point Location { get; protected set; }
 
