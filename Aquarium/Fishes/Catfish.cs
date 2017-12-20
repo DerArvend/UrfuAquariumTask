@@ -34,7 +34,7 @@ namespace Aquarium.Fishes
 		private void Default(IGame game)
 		{
 			if (Location == Direction || Location.IsNearBorder(game))
-					Direction = SelectRandomDirection(game);
+				Direction = SelectRandomDirection(game);
 
 			Location = Location.MoveTo(Direction, game.Settings.Catfish.moveSpeed);
 		}
@@ -49,10 +49,10 @@ namespace Aquarium.Fishes
 		private void GoToFood(IGame game)
 		{
 			var hungerRadius = GetHungerRadius(game, game.Settings.Catfish.hungerRadius);
-			Location = GetFoodNear(game, hungerRadius)
+			Location = Location.MoveTo(GetFoodNear(game, hungerRadius)
 				.OrderBy(x => x.Location.GetDistanceTo(Location))
 				.First()
-				.Location;
+				.Location, game.Settings.Catfish.moveSpeed);
 		}
 	}
 }

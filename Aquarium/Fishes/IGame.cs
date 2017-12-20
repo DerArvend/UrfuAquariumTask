@@ -11,7 +11,7 @@ namespace Aquarium.Fishes
 		IEnumerable<IGameObject> GetAllObjects();
 		Size AquariumSize { get; }
 		void Update();
-		bool TryAddObject(IGameObject obj);
+		bool TryAddObject<T>(T objectType, Point location) where T: IGameObject, new();
 		GameSettings Settings { get; }
 	}
 }
