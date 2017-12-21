@@ -44,5 +44,10 @@ namespace Aquarium
                 game.Settings.Caviar.width,
                 game.Settings.Caviar.height);
         }
+        private void DrawIndicator(Graphics g, Fish fish, IGame game)
+        {
+            g.DrawRectangle(new Pen(Color.DarkGray), fish.Location.X + 10, fish.Location.Y + 10, 40, 50);
+            g.DrawRectangle(new Pen(Color.DarkGreen), (fish.Location.X + 10)*fish.Hunger, (fish.Location.Y + 10)*fish.Hunger, 30, 40);
+        }
     }
 }
