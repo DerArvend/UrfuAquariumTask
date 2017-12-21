@@ -17,12 +17,12 @@ namespace Aquarium
                 if (obj is Caviar caviar)
                     DrawCaviar(g, caviar, game);
                 if (obj is HunterFish hunterFish)
-                    DrawHunterish(g, hunterFish, game);
+                    DrawHunterFish(g, hunterFish, game);
             }
             return background;
 		}
 
-        private void DrawHunterish(Graphics g, HunterFish hunterFish, IGame game)
+        private void DrawHunterFish(Graphics g, HunterFish hunterFish, IGame game)
         {
             g.DrawImage(Properties.Resources.Piranha_left,
                 hunterFish.Location.X, hunterFish.Location.Y,

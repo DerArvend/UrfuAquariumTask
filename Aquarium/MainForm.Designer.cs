@@ -47,7 +47,7 @@
             // 
             // buttonHungerOff
             // 
-            this.buttonHungerOff.Location = new System.Drawing.Point(868, 39);
+            this.buttonHungerOff.Location = new System.Drawing.Point(868, 30);
             this.buttonHungerOff.Name = "buttonHungerOff";
             this.buttonHungerOff.Size = new System.Drawing.Size(173, 51);
             this.buttonHungerOff.TabIndex = 1;
