@@ -27,7 +27,7 @@ namespace Aquarium.Fishes
 		    }
 			else if (timaBeforeSpawn < game.Settings.Caviar.spawnDelay)
 		    {
-			    timaBeforeSpawn += game.Settings.updateRate;
+			    timaBeforeSpawn++;
 		    }
 		    else
 		    {
