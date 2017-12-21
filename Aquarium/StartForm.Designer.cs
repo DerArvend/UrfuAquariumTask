@@ -29,36 +29,68 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StartForm));
-            this.button1 = new System.Windows.Forms.Button();
+            this.StartGameButton = new System.Windows.Forms.Button();
+            this.AuthorsButton = new System.Windows.Forms.Button();
+            this.ExitButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // StartGameButton
             // 
-            this.button1.Location = new System.Drawing.Point(267, 157);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(265, 48);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.StartGameButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.StartGameButton.Font = new System.Drawing.Font("Super Mario 286(RUS BY LYAJKA)", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.StartGameButton.Location = new System.Drawing.Point(267, 136);
+            this.StartGameButton.Name = "StartGameButton";
+            this.StartGameButton.Size = new System.Drawing.Size(263, 62);
+            this.StartGameButton.TabIndex = 0;
+            this.StartGameButton.Text = "Start Game";
+            this.StartGameButton.UseVisualStyleBackColor = false;
+            this.StartGameButton.Click += new System.EventHandler(this.StartGameButton_Click);
+            // 
+            // AuthorsButton
+            // 
+            this.AuthorsButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.AuthorsButton.Font = new System.Drawing.Font("Super Mario 286(RUS BY LYAJKA)", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.AuthorsButton.Location = new System.Drawing.Point(267, 229);
+            this.AuthorsButton.Name = "AuthorsButton";
+            this.AuthorsButton.Size = new System.Drawing.Size(263, 62);
+            this.AuthorsButton.TabIndex = 1;
+            this.AuthorsButton.Text = "Authors";
+            this.AuthorsButton.UseVisualStyleBackColor = false;
+            this.AuthorsButton.Click += new System.EventHandler(this.AuthorsButton_Click);
+            // 
+            // ExitButton
+            // 
+            this.ExitButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ExitButton.Font = new System.Drawing.Font("Super Mario 286(RUS BY LYAJKA)", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ExitButton.Location = new System.Drawing.Point(267, 317);
+            this.ExitButton.Name = "ExitButton";
+            this.ExitButton.Size = new System.Drawing.Size(263, 62);
+            this.ExitButton.TabIndex = 2;
+            this.ExitButton.Text = "Exit";
+            this.ExitButton.UseVisualStyleBackColor = false;
+            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
             // StartForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Aquarium.Properties.Resources.background_startForm;
             this.ClientSize = new System.Drawing.Size(784, 601);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.ExitButton);
+            this.Controls.Add(this.AuthorsButton);
+            this.Controls.Add(this.StartGameButton);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(800, 640);
             this.MinimumSize = new System.Drawing.Size(800, 640);
             this.Name = "StartForm";
-            this.Text = "Aquarium";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Aquaruim";
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button StartGameButton;
+        private System.Windows.Forms.Button AuthorsButton;
+        private System.Windows.Forms.Button ExitButton;
     }
 }

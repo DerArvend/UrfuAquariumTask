@@ -67,6 +67,12 @@
     <Compile Include="Fishes\HunterFish.cs" />
     <Compile Include="Fishes\IGame.cs" />
     <Compile Include="Fishes\IGameObject.cs" />
+    <Compile Include="AuthorsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AuthorsForm.Designer.cs">
+      <DependentUpon>AuthorsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="StartForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +92,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tests\GeometryTests.cs" />
     <Compile Include="VisualisatonDrawer.cs" />
+    <EmbeddedResource Include="AuthorsForm.resx">
+      <DependentUpon>AuthorsForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="StartForm.resx">
       <DependentUpon>StartForm.cs</DependentUpon>
     </EmbeddedResource>

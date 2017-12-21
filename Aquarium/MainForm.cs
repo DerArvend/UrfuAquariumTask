@@ -30,7 +30,6 @@ namespace Aquarium
                 buttonHugerOn.Visible = true;
                 buttonHungerOff.Visible = false;
             }
-
         }
 
         private void buttonHungerOff_Click(object sender, EventArgs e)
@@ -44,6 +43,20 @@ namespace Aquarium
             {
                 buttonHungerOff.Visible = true;
                 buttonHugerOn.Visible = false;
+            }
+        }
+
+        private void buttonHugerOn_Click(object sender, EventArgs e)
+        {
+            if (buttonHugerOn.Visible == true)
+            {
+                buttonHugerOn.Visible = false;
+                buttonHungerOff.Visible = true;
+            }
+            else
+            {
+                buttonHugerOn.Visible = true;
+                buttonHungerOff.Visible = false;
             }
         }
     }

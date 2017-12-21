@@ -42,10 +42,12 @@
             this.buttonHugerOn.TabIndex = 0;
             this.buttonHugerOn.Text = "Hunger indicator on/off";
             this.buttonHugerOn.UseVisualStyleBackColor = true;
+            this.buttonHugerOn.Visible = false;
+            this.buttonHugerOn.Click += new System.EventHandler(this.buttonHugerOn_Click);
             // 
             // buttonHungerOff
             // 
-            this.buttonHungerOff.Location = new System.Drawing.Point(868, 30);
+            this.buttonHungerOff.Location = new System.Drawing.Point(868, 39);
             this.buttonHungerOff.Name = "buttonHungerOff";
             this.buttonHungerOff.Size = new System.Drawing.Size(173, 51);
             this.buttonHungerOff.TabIndex = 1;

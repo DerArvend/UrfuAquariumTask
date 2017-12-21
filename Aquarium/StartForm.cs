@@ -17,16 +17,21 @@ namespace Aquarium
             InitializeComponent();
         }
 
-        private void InitializeComponent()
+        private void StartGameButton_Click(object sender, EventArgs e)
         {
-            this.SuspendLayout();
-            // 
-            // StartForm
-            // 
-            this.ClientSize = new System.Drawing.Size(426, 396);
-            this.Name = "StartForm";
-            this.ResumeLayout(false);
+            var form = new MainForm();
+            form.ShowDialog();
+        }
 
+        private void AuthorsButton_Click(object sender, EventArgs e)
+        {
+            var form = new AuthorsForm();
+            form.ShowDialog();
+        }
+
+        private void ExitButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
