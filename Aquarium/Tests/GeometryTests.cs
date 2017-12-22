@@ -35,7 +35,7 @@ namespace Aquarium.Tests
 		public void GetPolar_ShouldBeZero_ForZeroPoint()
 		{
 			var p = new Point(0, 0);
-			p.GetPolarCoordinates().ShouldBeEquivalentTo((0, 0));
+			p.GetPolarCoordinates().ShouldBeEquivalentTo((0d, 0d));
 		}
 
 		[Test]
@@ -48,6 +48,17 @@ namespace Aquarium.Tests
 		private static double MeasureDistance(int x1, int y1, int x2, int y2)
 		{
 			return new Point(x1, y1).GetDistanceTo(new Point(x2, y2));
+		}
+
+		[TestCase(0, 0, 0, 1, 1, 0, 1)]
+		[TestCase(0, 0, -1, 0, 1, -1, 0)]
+		[TestCase(0, 0, 0, -1, 1, 0, -1)]
+		[TestCase(0, 0, 0, 1, 50, 0, 1)]
+		[TestCase(0, 0, 0, 2, 1, 0, 1)]
+		[TestCase(0, 0, 0, 300, 34, 0, 34)]
+		public void MoveTo_Tests(int x1, int y1, int x2, int y2, double length, int x3, int y3)
+		{
+			new Point(x1, y1).MoveTo(new Point(x2, y2), length).Should().Be(new Point(x3, y3));
 		}
 	}
 }
