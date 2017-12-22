@@ -70,6 +70,18 @@
     <Compile Include="Fishes\HunterFish.cs" />
     <Compile Include="Fishes\IGame.cs" />
     <Compile Include="Fishes\IGameObject.cs" />
+    <Compile Include="AuthorsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AuthorsForm.Designer.cs">
+      <DependentUpon>AuthorsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StartForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartForm.Designer.cs">
+      <DependentUpon>StartForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Geometry\PointExtensions.cs" />
     <Compile Include="Geometry\Vector.cs" />
     <Compile Include="IDrawer.cs" />
@@ -85,6 +97,15 @@
     <Compile Include="Tests\FakeGame.cs" />
     <Compile Include="Tests\GeometryTests.cs" />
     <Compile Include="VisualisatonDrawer.cs" />
+    <EmbeddedResource Include="AuthorsForm.resx">
+      <DependentUpon>AuthorsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartForm.resx">
+      <DependentUpon>StartForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -110,6 +131,47 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\firstFish.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue Neon- left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Breed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dolphin- left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fish1-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fish2-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Poseidon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Piranha-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shark-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Som-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SwordFish1-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background authers.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background startForm.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
