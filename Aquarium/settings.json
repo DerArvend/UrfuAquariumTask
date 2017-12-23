@@ -1,46 +1,56 @@
 {
-    "updateRate": 30,
+	"updateRate": 30,
 	"foodSpawnChance": 0.0048,
 	"maxHungerRadiusCoefficent": 10,
 
-	"Caviar" : {
+	"Caviar": {
 		"width": 30,
 		"height": 30,
 		"moveSpeed": 3,
 		"spawnDelay": 500
 	},
-	"Shark" : {
-		"width" : 250,
-		"height" : 85,
+	"Shark": {
+		"width": 250,
+		"height": 85,
 		"fastMoveSpeed": 5,
 		"moveSpeed": 3,
 		"hungerRadius": 30
 	},
-	"Neon" : {
-		"width" : 65,
-		"height" : 25,
+	"Neon": {
+		"width": 65,
+		"height": 25,
 		"moveSpeed": 5,
 		"hungerRadius": 22
-	},	
-	"Piranha" : {
-		"width" : 135,
-		"height" : 75,
+	},
+	"Piranha": {
+		"width": 135,
+		"height": 75,
 		"moveSpeed": 4,
 		"hungerRadius": 40
 	},
-	"Catfish" : {
-		"width" : 350,
-		"height" : 75,
-		"moveSpeed": 3,
-		"hungerRadius": 60
+	"Catfish": {
+		"width": 120,
+		"height": 50,
+		"moveSpeed": 7,
+		"hungerRadius": 30,
+		"eatingRadius": 50,
+		"defaultHunger": 10,
+		"hungerRate": 0.1,
+		"hungerGainPerFood": 10
 	},
 
-	"FishKing" : {
+	"FishKing": {
 		"moveSpeed": 3,
 		"radius": 30,
 		"defendedAreaCenter": {
 			"x": 0,
 			"y": 0
 		}
+	},
+
+	"FishFood": {
+		"width": 30,
+		"height": 30
 	}
+
 }

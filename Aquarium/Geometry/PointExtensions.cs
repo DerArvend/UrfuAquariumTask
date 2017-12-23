@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using Aquarium.Fishes;
+using Aquarium.Logic;
 using static System.Math;
 
 namespace Aquarium.Geometry
@@ -36,16 +37,21 @@ namespace Aquarium.Geometry
 			return new Point(p1.X - p2.X, p1.Y - p2.Y);
 		}
 
-		public static bool IsNearBorder(this Point p, IGame game, int radius = 1)
+		public static bool IsNearBorder(this Point p, IAquarium aquarium, int radius = 1)
 		{
 			if (radius <=0)
 				throw new ArgumentException("radius must be more than zero");
-			if (radius >= Min(game.AquariumSize.Height, game.AquariumSize.Width))
+			if (radius >= Min(aquarium.Size.Height, aquarium.Size.Width))
 				throw new ArgumentException("radius must be less than aquarium size");
-			return p.X >= game.AquariumSize.Width - radius ||
+			return p.X >= aquarium.Size.Width - radius ||
 			       p.X <= radius ||
-			       p.Y >= game.AquariumSize.Height - radius ||
+			       p.Y >= aquarium.Size.Height - radius ||
 			       p.Y <= radius;
+		}
+
+		public static bool IsInSize(this Point p, Size size)
+		{
+			return p.X >= 0 && p.Y >= 0 && p.X < size.Width && p.Y < size.Height;
 		}
 	}
 }

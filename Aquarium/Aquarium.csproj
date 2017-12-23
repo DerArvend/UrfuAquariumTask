@@ -61,51 +61,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Fishes\Caviar.cs" />
-    <Compile Include="Fishes\Catfish.cs" />
-    <Compile Include="Fishes\Fish.cs" />
-    <Compile Include="Fishes\FishFood.cs" />
-    <Compile Include="Fishes\FishState.cs" />
-    <Compile Include="Fishes\GameSettings.cs" />
-    <Compile Include="Fishes\HunterFish.cs" />
-    <Compile Include="Fishes\IGame.cs" />
-    <Compile Include="Fishes\IGameObject.cs" />
-    <Compile Include="AuthorsForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AuthorsForm.Designer.cs">
-      <DependentUpon>AuthorsForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="StartForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="StartForm.Designer.cs">
-      <DependentUpon>StartForm.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Objects\Caviar.cs" />
+    <Compile Include="Objects\Fishes\Catfish.cs" />
+    <Compile Include="Objects\States\CaviarState.cs" />
+    <Compile Include="Objects\Fishes\Fish.cs" />
+    <Compile Include="Objects\FishFood.cs" />
+    <Compile Include="Objects\States\FishState.cs" />
+    <Compile Include="Logic\Aquarium.cs" />
+    <Compile Include="AquariumSettings.cs" />
+    <Compile Include="Objects\Fishes\HunterFish.cs" />
+    <Compile Include="Logic\IAquarium.cs" />
+    <Compile Include="Objects\IAquariumObject.cs" />
     <Compile Include="Geometry\PointExtensions.cs" />
     <Compile Include="Geometry\Vector.cs" />
-    <Compile Include="IDrawer.cs" />
+    <Compile Include="Visualization\IDrawer.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MainForm.Designer.cs">
-      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tests\Caviar_Should.cs" />
-    <Compile Include="Tests\FakeGame.cs" />
     <Compile Include="Tests\GeometryTests.cs" />
-    <Compile Include="VisualisatonDrawer.cs" />
-    <EmbeddedResource Include="AuthorsForm.resx">
-      <DependentUpon>AuthorsForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="StartForm.resx">
-      <DependentUpon>StartForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MainForm.resx">
-      <DependentUpon>MainForm.cs</DependentUpon>
-    </EmbeddedResource>
+    <Compile Include="Visualization\VisualisatonDrawer.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -132,46 +109,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\background.jpg" />
+    <None Include="Resources\food.bmp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\firstFish.bmp" />
+    <None Include="Resources\food.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Blue Neon- left.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Breed.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Dolphin- left.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Fish1-left.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Fish2-left.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Poseidon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Piranha-left.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Shark-left.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Som-left.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\SwordFish1-left.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\background authers.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\background startForm.jpg" />
+    <None Include="Resources\food.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

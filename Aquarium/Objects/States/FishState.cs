@@ -1,4 +1,4 @@
-﻿namespace Aquarium.Fishes
+﻿namespace Aquarium.Objects.States
 {
 	public enum FishState
 	{

@@ -1,9 +1,10 @@
 ﻿//all speed values in pixels per timeframe
 //alltime values in timeframes
 
+// ReSharper disable All
 namespace Aquarium.Settings
 {
-	public class GameSettings
+	public class AquariumSettings
 	{
 		public int updateRate { get; set; }
 		public double foodSpawnChance { get; set; }
@@ -14,6 +15,7 @@ namespace Aquarium.Settings
 		public Piranha Piranha { get; set; }
 		public Catfish Catfish { get; set; }
 		public FishKing FishKing { get; set; }
+		public FishFood FishFood { get; set; }
 	}
 
 	public class Caviar
@@ -55,6 +57,9 @@ namespace Aquarium.Settings
 		public int height { get; set; }
 		public int moveSpeed { get; set; }
 		public int hungerRadius { get; set; }
+		public int eatingRadius { get; set; }
+		public int defaultHunger { get; set; }
+		public int hungerGainPerFood { get; set; }
 	}
 
 	public class DefendedAreaCenter
@@ -68,5 +73,10 @@ namespace Aquarium.Settings
 		public int moveSpeed { get; set; }
 		public int radius { get; set; }
 		public DefendedAreaCenter defendedAreaCenter { get; set; }
+	}
+	public class FishFood
+	{
+		public int width { get; set; }
+		public int height { get; set; }
 	}
 }
